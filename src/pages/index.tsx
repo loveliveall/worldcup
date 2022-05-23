@@ -51,8 +51,8 @@ function ModeSelector({ onSelect, stepBack, }: ModeSelectorProps) {
   return (
     <Stack alignItems="center" spacing={4}>
       <Heading size="md">질문 범위를 선택해주세요</Heading>
-      <Button colorScheme="blue" onClick={() => onSelect(GameMode.ALL)}>전체 아이돌</Button>
-      <Button colorScheme="blue" onClick={() => onSelect(GameMode.SAMESCH)}>동일 프로젝트 아이돌</Button>
+      <Button colorScheme="blue" onClick={() => onSelect(GameMode.ALL)}>전체</Button>
+      <Button colorScheme="blue" onClick={() => onSelect(GameMode.SAMEPRJ)}>동일 프로젝트</Button>
       <Divider color="black" />
       <Button colorScheme="yellow" onClick={stepBack}>이전으로</Button>
     </Stack>
