@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import {
   Button,
   Divider,
   Heading,
-  Image,
   Stack,
   Wrap,
 } from '@chakra-ui/react';
-import { CHARACTER, CHARACTER_IDS } from '@/data/character';
+import ChrImg from '@/components/ChrImg';
+import { CHARACTER_IDS } from '@/data/character';
 import { GameMode } from '@/data/gameMode';
 
 // Step 1
@@ -19,24 +19,10 @@ function CharacterSelector({ onSelect }: CharacterSelectorProps) {
   return (
     <Stack alignItems="center" spacing={4}>
       <Heading size="md">캐릭터를 선택해주세요</Heading>
-      <Wrap shouldWrapChildren justify="center" spacing={4}>
-        {CHARACTER_IDS.map((chId) => {
-          const ch = CHARACTER[chId]!;
-          return (
-            <Image
-              key={chId}
-              w="80px"
-              borderRadius="50%"
-              cursor="pointer"
-              _hover={{
-                opacity: 0.7,
-              }}
-              src={ch.img}
-              alt={ch.name}
-              onClick={() => onSelect(chId)}
-            />
-          );
-        })}
+      <Wrap shouldWrapChildren justify="center" align="center" spacing={4}>
+        {CHARACTER_IDS.map((chId) => (
+          <ChrImg key={chId} chrId={chId} onClick={() => onSelect(chId)} />
+        ))}
       </Wrap>
     </Stack>
   );
@@ -60,9 +46,9 @@ function ModeSelector({ onSelect, stepBack, }: ModeSelectorProps) {
 }
 
 function Index() {
-  const [step, setStep] = React.useState(0);
-  const [chrId, setChrId] = React.useState('');
-  const [gameMode, setGameMode] = React.useState<GameMode>(GameMode.ALL);
+  const [step, setStep] = useState(0);
+  const [chrId, setChrId] = useState('');
+  const [gameMode, setGameMode] = useState<GameMode>(GameMode.ALL);
   const onChrSelect = (cId: string) => {
     setChrId(cId);
     setStep(1);
