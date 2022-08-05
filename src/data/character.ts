@@ -31,7 +31,7 @@ export const CHARACTER: CharacterMap = {
   s0009: { prjId: 2, name: '쿠로사와 루비', img: '//i.idol.st/u/idol/7Kurosawa-Ruby-UbPDc8.png' },
   s0010: { prjId: 2, name: '카즈노 세이라', img: '//i.idol.st/u/idol/43Kazuno-Sarah-J0mfHD.png' },
   s0011: { prjId: 2, name: '카즈노 리아', img: '//i.idol.st/u/idol/42Kazuno-Leah-FUFPXq.png' },
-  n0000: { prjId: 3, name: '타카사키 유우', img: '//w.namu.la/s/bb708c2337e70a485238c9a3d5fa2a7b7597f3bceef34bab038a0330cc9e5a23f0c54103d548185e161a8902ec7c6b6f8c10d7f8e19b1bff215588bfb34fc584721a8fc3548aefda28e12479eb88bff9379ca7876477fac4f211a02f459f9f86' },
+  n0000: { prjId: 3, name: '타카사키 유우', img: '//w.namu.la/s/bb708c2337e70a485238c9a3d5fa2a7b7597f3bceef34bab038a0330cc9e5a23f0c54103d548185e161a8902ec7c6b6f8c10d7f8e19b1bff215588bfb34fc584cfd599bd7388395412c330a67bca6e5d4930e77c5a2d97de38f98c1423748f66' },
   n0001: { prjId: 3, name: '우에하라 아유무', img: '//i.idol.st/u/idol/102Uehara-Ayumu-TgB2p1.png' },
   n0002: { prjId: 3, name: '나카스 카스미', img: '//i.idol.st/u/idol/67Nakasu-Kasumi-M5ZCuB.png' },
   n0003: { prjId: 3, name: '오사카 시즈쿠', img: '//i.idol.st/u/idol/70Osaka-Shizuku-4TmRNm.png' },
